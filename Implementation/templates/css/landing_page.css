@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    /* box-sizing: border-box; */
+}
+body{
+    font-family: serif;
+  
+}
+
+
+.navbar{
+    /* border: solid black; */
+    height: 70px;
+}
+
+.navbar-brand{
+     font-weight: 700;
+}
+
+.search{
+    border: solid black;
+    position: absolute;
+    margin-left: 10%;
+    padding: 5px;
+    padding-right: 45%;
+}
+
+.search-btn{
+    position: absolute;
+    margin-left: 68%;
+
+    padding: 5px 20px 5px 20px;
+}
+
+.button{
+    /* position: absolute; */
+    border: solid black;
+    padding: 3px;
+    padding-left:19%;
+    margin-left: 72%;
+}
+
+.login{
+    position: absolute;
+    padding: 5px 20px 5px 20px;
+    margin-left:80%;
+   
+}
+.signup{
+    position: absolute;
+    padding: 5px 20px 5px 20px;
+    margin-left:86%;
+   
+}
+.hero-banner{
+ 
+    position: relative;
+    width: 100%;
+    min-height:70vh;
+    display: flex;
+   
+
+
+    background-image: url('top-image.png');
+    background-size: cover;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  
+    
+    /* margin-top: 10px; */
+
+    
+}
+
+.hero-overlay {
+      /* border: solid black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-title{
+    margin-top: 20px;
+    color: white;
+    margin-left: 400px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+   
+}
+
+.hero-subtitle{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    
+    margin-left: 500px;
+    font-size: 20px;
+      font-weight: bold;
+}
+
+
+.button2{
+    /* border: solid black; */
+    padding: 5px;
+}
+
+.customer{
+    background-color: red;
+    margin-left: 35%;
+    padding: 10px 50px 10px 50px;
+  
+}
+
+.owner{
+    background-color: green;
+    margin-left: 2%;
+    padding: 10px 50px 10px 50px;
+}
+
+
+
+.category{
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    display: flex;  
+    padding:0 20px;
+    
+
+}
+.category-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.category-label{
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+    font-family: sans-serif
+}
+
+.category-image{
+    width: 200px;
+    height: 170px;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center; 
+    display: block;
+    border: 2px solid #333333;
+}
+
+
+
+
+
+
+
