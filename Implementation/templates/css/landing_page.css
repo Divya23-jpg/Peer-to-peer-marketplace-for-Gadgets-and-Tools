@@ -6,13 +6,25 @@
 }
 body{
     font-family: serif;
+         background-color: #FAFAFA;
   
 }
 
-
+.top-bar{
+    width: 100%;
+    height: 40px;
+    background-color: #1F2A44;
+}
+.top-write{
+    color: white;
+    font-size: 14px;
+    margin-left: 37%;
+    padding: 5px;
+}
 .navbar{
-    /* border: solid black; */
+
     height: 70px;
+    background-color: #FAFAFA;
 }
 
 .navbar-brand{
@@ -20,39 +32,50 @@ body{
 }
 
 .search{
-    border: solid black;
+    box-shadow: 1px 1px  1px 1px  grey;
     position: absolute;
     margin-left: 10%;
     padding: 5px;
     padding-right: 45%;
+    border: none;
+    background-color: #F5F5F5;
 }
 
 .search-btn{
     position: absolute;
     margin-left: 68%;
-
     padding: 5px 20px 5px 20px;
+    background-color: #D8C4AC;
+    color: white;
+    background-color:#111844;
 }
 
 .button{
     /* position: absolute; */
-    border: solid black;
+
     padding: 3px;
     padding-left:19%;
     margin-left: 72%;
+    /* color: white;
+    background-color:#111844; */
+   
 }
 
 .login{
     position: absolute;
     padding: 5px 20px 5px 20px;
     margin-left:80%;
+    color: white;
+    background-color:#111844;
+    
    
 }
 .signup{
     position: absolute;
     padding: 5px 20px 5px 20px;
     margin-left:86%;
-   
+    color: white;
+    background-color:#111844;
 }
 .hero-banner{
  
@@ -70,7 +93,7 @@ body{
     overflow: hidden;
   
     
-    /* margin-top: 10px; */
+
 
     
 }
@@ -86,21 +109,21 @@ body{
 
 .hero-title{
     margin-top: 20px;
-    color: white;
+    color:   #FAFAFA;
     margin-left: 400px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+   
    
 }
 
 .hero-subtitle{
     
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    
+    color:  #FAFAFA;
     margin-left: 500px;
     font-size: 20px;
-      font-weight: bold;
+    font-weight: bold;
 }
 
 
@@ -110,14 +133,15 @@ body{
 }
 
 .customer{
-    background-color: red;
+    background: linear-gradient(to right, #C62828, red);
     margin-left: 35%;
     padding: 10px 50px 10px 50px;
   
 }
 
 .owner{
-    background-color: green;
+    background: linear-gradient(to right, #2E7D32 , green);
+
     margin-left: 2%;
     padding: 10px 50px 10px 50px;
 }
