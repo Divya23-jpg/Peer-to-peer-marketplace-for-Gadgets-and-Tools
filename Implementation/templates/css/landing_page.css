@@ -128,22 +128,75 @@ body{
 
 
 .button2{
-    /* border: solid black; */
-    padding: 5px;
+    display: block;
+    border: solid black;
+    padding: 2%;
+   
+}
+.secure{
+    position: absolute;
+    font-size: 18px;
+    color: #111844;
+    margin-left: 18%;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.secure-logo{
+    position: absolute;
+    margin-left: 15%;
+
 }
 
+.secure-write{
+    position: absolute;
+    font-size: 14px;
+    color: #111844;
+    margin-left: 18%;
+    margin-top: 2%;
+    font-weight: 500;
+}
+.earn{
+    position: absolute;
+    font-size: 19px;
+    color: #111844;
+    margin-left: 72%;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+.earn-logo{
+    position: absolute;
+    margin-left: 68%;
+}
+
+.earn-write{
+    position: absolute;
+    font-size: 14px;
+    color: #111844;
+    margin-left: 72%;
+    margin-top: 2%;
+    font-weight: 500;
+}
 .customer{
     background: linear-gradient(to right, #C62828, red);
     margin-left: 35%;
     padding: 10px 50px 10px 50px;
-  
+    box-shadow: 2px 2px 2px 1px red;
+    border: none;
+    color:  #FAFAFA;
+    margin-top: 2px;
+    border-radius: 5px;
+    
 }
 
 .owner{
     background: linear-gradient(to right, #2E7D32 , green);
-
+    box-shadow: 2px 2px 2px 1px green;
+    border: none;
     margin-left: 2%;
     padding: 10px 50px 10px 50px;
+    color:  #FAFAFA;
+     border-radius: 5px;
 }
 
 
