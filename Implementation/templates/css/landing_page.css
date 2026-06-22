@@ -67,7 +67,7 @@ body{
     margin-left:80%;
     color: white;
     background-color:#111844;
-    
+
    
 }
 .signup{
@@ -200,7 +200,7 @@ body{
 }
 
 .popular{
-    /* border: solid black; */
+
     text-align: center;
     color: #111844;
     margin-top: 4px;
@@ -225,6 +225,7 @@ body{
 }
 
 .category-item:hover p { color: #1565C0; }
+
 .category-item{
 
     border-radius: 15px;
