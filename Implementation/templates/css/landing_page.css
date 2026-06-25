@@ -47,7 +47,7 @@ body{
 .search{
     box-shadow: 1px 1px  1px 1px  grey;
     position: absolute;
-    margin-left: 10%;
+    margin-left: 13%;
     padding: 8px;
     padding-right: 45%;
     border: none;
@@ -57,13 +57,13 @@ body{
 
 .search-btn{
     position: absolute;
-    font-size: 20px;
-    margin-left: 67%;
+    font-size: 23px;
+    margin-left: 71%;
     padding: 2px 4px;
     background-color: #D8C4AC;
     color: white;
     background-color:#F36C21;
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px;
     /* border-radius: 8px; */
     border: none;
 }
@@ -82,7 +82,7 @@ body{
     position: absolute;
     border-radius: 8px;
     padding: 5px 14px;
-    margin-left:78%;
+    margin-left:80%;
     color: white;
  
     background-color: #0D2A6B;
@@ -100,7 +100,7 @@ body{
     font-size: 20px;
     padding: 5px 14px;
     border-radius: 8px;
-    margin-left:86%;
+    margin-left:88%;
     color: white;
     background-color: #0D2A6B;
  
@@ -146,7 +146,11 @@ body{
     margin-left: 400px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-   
+    text-shadow: 2px 2px 5px black;
+
+
+    
+ 
    
 }
 
@@ -157,6 +161,7 @@ body{
     margin-left: 500px;
     font-size: 20px;
     font-weight: bold;
+     text-shadow: 2px 2px 5px black;
 }
 
 
