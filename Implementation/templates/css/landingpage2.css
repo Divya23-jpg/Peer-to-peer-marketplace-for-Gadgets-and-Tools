@@ -6,10 +6,9 @@
 }
 
 .nav{
-  /* display: flex; */
+  display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #fcd800;
+  background-color: grey;
   height: 50px;
 
 }
@@ -18,10 +17,30 @@
 .navbar-bottom{
     text-decoration: none;
     font-family: sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #000;
+    /* color: #ffffff; */
 }
 
+.navbar-brand{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#home{
+    margin-left: 12%;
+    font-size: 20px;
+}
+
+#shop{
+    margin-left: 2.5%;
+    font-size: 20px;
+}
+#category{
+    margin-left: 20%;
+    font-size: 20px;
+}
 .dropdown{
     display: inline-block;
     position: relative;
@@ -40,9 +59,10 @@
 .dropdown-content a{
     display: block;
     padding: 10px 15px;
-    color: #333;
+    color: white;
     text-decoration: none;
 }
+
 
 
 .dropdown-content a :hover{
@@ -51,4 +71,21 @@
 
 .dropdown:hover .dropdown-content{
     display: block;
+}
+
+#contact{
+    margin-left: 4%;
+    font-size: 20px;
+}
+
+#login{
+    margin-left: 25%;
+    font-size: 20px;
+    padding: 2px 15px 2px 15px;
+}
+
+#signup{
+    margin-left: 1%;
+    font-size: 20px;
+    padding: 2px 15px 2px 15px;
 }
