@@ -6,110 +6,94 @@
 }
 body{
     font-family: serif;
-         background-color: #FAFAFA;
-  
-}
-.top-bar1{
-    width: 100%;
-    height: 50px;
-    border: none;
-    /* background: linear-gradient(to right,#1E56C0,#0D2A6B ,#1F2A44 ); */
-    background: linear-gradient(to bottom ,#1E56C0 ,#1F2A44 );
-  
-  
-}
-.top-bar{
- 
-    width: 100%;
-    height: 40px;
-     border: none;
-    /* background-color: #1F2A44; */
-    background-color: #0D2A6B;
-}
-.top-write{
-    color: white;
-    font-size: 14px;
-    margin-left: 37%;
-    padding: 5px;
-}
-.navbar{
-
-    height: 70px;
     background-color: #FAFAFA;
+  
 }
 
+
+.nav{
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  height: 50px;
+
+}
+
+.navbar-bottom{
+    text-decoration: none;
+    font-family: sans-serif;
+    /* font-weight: bold; */
+    color: #000;
+    /* color: #ffffff; */
+}
 .navbar-brand{
-    font-size: 27px; 
-    position: absolute;
-     font-weight: 700;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
-
-.search{
-    box-shadow: 1px 1px  1px 1px  grey;
-    position: absolute;
-    margin-left: 13%;
-    padding: 8px;
-    padding-right: 45%;
-    border: none;
-    background-color: #F5F5F5;
-      border-radius: 8px;
-}
-
-.search-btn{
-    position: absolute;
-    font-size: 23px;
-    margin-left: 71%;
-    padding: 2px 4px;
-    background-color: #D8C4AC;
-    color: white;
-    background-color:#F36C21;
-    border-radius: 8px;
-    /* border-radius: 8px; */
-    border: none;
-}
-
-.button{
-
-    padding: 3px;
-    padding-left:19%;
-    margin-left: 72%;
-
-   
-}
-
-.login{
+#home{
+    margin-left: 12%;
     font-size: 20px;
-    position: absolute;
-    border-radius: 8px;
-    padding: 5px 14px;
-    margin-left:80%;
-    color: white;
- 
-    background-color: #0D2A6B;
-
-   
 }
 
-.login:hover{
-    background-color:#111844;
-    transition: 0.3s ease;
-}
-
-.signup{
-    position: absolute;
+#shop{
+    margin-left: 2.5%;
     font-size: 20px;
-    padding: 5px 14px;
-    border-radius: 8px;
-    margin-left:88%;
-    color: white;
-    background-color: #0D2A6B;
- 
+}
+#category{
+    margin-left: 20%;
+    font-size: 20px;
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
 }
 
-.signup:hover{
-    background-color:#111844;
-    transition: 0.3s ease;
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: red;
+    min-width:180px;
+
 }
+
+.dropdown-content a{
+    display: block;
+    padding: 10px 15px;
+    color: red;
+    text-decoration: none;
+}
+
+
+
+.dropdown-content a :hover{
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+#contact{
+    margin-left: 4%;
+    font-size: 20px;
+}
+
+
+#login{
+    margin-left: 25%;
+    font-size: 20px;
+    padding: 2px 15px 2px 15px;
+}
+
+#signup{
+    margin-left: 1%;
+    font-size: 20px;
+    padding: 2px 15px 2px 15px;
+}
+
 .hero-banner{
  
     position: relative;
@@ -118,16 +102,14 @@ body{
     display: flex;
    
 
-
-    background-image: url('top-image.png');
+    background-image: url('Hero-banner2.png');
     background-size: cover;
     background-position: center 70%;
+    /* background-position: center right; */
     background-repeat: no-repeat;
     overflow: hidden;
   
     
-
-
     
 }
 

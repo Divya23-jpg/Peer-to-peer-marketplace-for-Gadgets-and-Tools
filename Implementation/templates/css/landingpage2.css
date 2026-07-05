@@ -89,3 +89,52 @@
     font-size: 20px;
     padding: 2px 15px 2px 15px;
 }
+
+.images{
+    display:grid;
+    margin-top: 2%;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: repeat(2,minmax(300px,1fr));
+    gap: 10px;
+    width: 100%;
+
+    background-color: #fff;
+}
+
+.images > div{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.power-tool{
+   grid-column: 1;
+   grid-row: 1/span 2;
+   background-image: url('Power-Tools1.jpg');
+   background-color: red;
+}
+.Camera-vedio{
+   grid-column: 2;
+   grid-row: 1;
+   background-image: url('camera-vedio.jpg');
+   background-color: red;
+}
+.gadget-tech{
+    grid-column: 3;
+   grid-row: 1;
+   background-image: url('gadget-tech.jpg');
+   background-color: red;
+}
+.home-gadget{
+      grid-column: 2;
+   grid-row: 2;
+   background-image: url('home-garden.jpg');
+   background-color: red;
+}
+.hobby-fun{
+     grid-column: 3;
+   grid-row: 2;
+   background-image: url('\hobby-fun.jpg');
+   background-color: red;
+}
