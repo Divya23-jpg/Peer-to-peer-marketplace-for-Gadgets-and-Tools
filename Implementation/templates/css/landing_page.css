@@ -1,68 +1,74 @@
-*{
-    margin: 0;
-    padding: 0;
 
-    /* box-sizing: border-box; */
-}
 body{
     font-family: serif;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
+    margin: 0;
   
 }
 
-
+/* Nav bar Container */
 .nav{
+ border: 2px solid red;
   display: flex;
   align-items: center;
-  background-color: grey;
-  height: 50px;
+  background-color:#ffffff;
+  padding: 10px 60px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  justify-content: center;
+  height: 60px;
 
 }
 
+/* brand */
+.navbar-brand{
+    position: absolute;
+    font-size: 40px;
+    color: #1a1a1a;
+    font-weight: bold;
+    text-decoration: none;
+    left: 16px;
+}
+
+/* links */
 .navbar-bottom{
     text-decoration: none;
-    font-family: sans-serif;
-    /* font-weight: bold; */
-    color: #000;
-    /* color: #ffffff; */
-}
-.navbar-brand{
-    font-size: 30px;
-    font-family: sans-serif;
+    color: #333;
     font-weight: bold;
-}
-#home{
-    margin-left: 12%;
     font-size: 20px;
+    margin: 0 20px;
+    transition: color 0.3s ease,border-bottom 0.3s ease;
+
+
 }
 
-#shop{
-    margin-left: 2.5%;
-    font-size: 20px;
+.navbar-bottom:hover{
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
 }
-#category{
-    margin-left: 20%;
-    font-size: 20px;
-}
+
+/* Dropdown */
 .dropdown{
-    display: inline-block;
     position: relative;
 }
 
 .dropdown-content{
     display: none;
     position: absolute;
-    top: 100%;
+    top: 40px;
     left: 0;
-    background-color: red;
-    min-width:180px;
-
+    background-color: #ffffff;
+    border-radius: 6px;
+    min-width: 180px;
+    z-index: 100;
 }
+
+
 
 .dropdown-content a{
     display: block;
     padding: 10px 15px;
-    color: red;
+    color: #333;
+    
     text-decoration: none;
 }
 
@@ -76,22 +82,41 @@ body{
     display: block;
 }
 
-#contact{
-    margin-left: 4%;
-    font-size: 20px;
-}
+/* Buttons */
+
 
 
 #login{
-    margin-left: 25%;
-    font-size: 20px;
-    padding: 2px 15px 2px 15px;
+    position: absolute;
+    background-color: #ff7a00;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 75%;
+    
+}
+#login:hover{
+    background-color: #e56a00;
+}
+#signup{
+    position: absolute;
+    background-color: #ff7a00;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 90%;
 }
 
-#signup{
-    margin-left: 1%;
-    font-size: 20px;
-    padding: 2px 15px 2px 15px;
+#signup:hover{
+    background-color: #e56a00;
 }
 
 .hero-banner{
@@ -102,7 +127,7 @@ body{
     display: flex;
    
 
-    background-image: url('Hero-banner2.png');
+    background-image: url('hero banner new.png');
     background-size: cover;
     background-position: center 70%;
     /* background-position: center right; */
