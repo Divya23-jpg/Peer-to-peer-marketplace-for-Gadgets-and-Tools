@@ -141,6 +141,7 @@ body{
 .hero-image {
   flex: 1;
   text-align: right;
+  
 }
 .hero-image img {
 width: 500px;
