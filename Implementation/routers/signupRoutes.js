@@ -8,6 +8,8 @@ router.post('/signup',async(req,res)=>{
         const {email,password}=req.body;
 
         await user.create({email,password});
+        const data= await user.findAll();
+        console.log(data);
 
         res.send("Signup Successfully");
     }
