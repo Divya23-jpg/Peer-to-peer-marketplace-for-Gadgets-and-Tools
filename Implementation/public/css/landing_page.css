@@ -222,14 +222,15 @@ body{
 .features{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     padding: 60px 100px;
     background-color: #fff;
+    margin-top: 20px;
 }
 .feature-card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
     padding: 20px;
     text-align: center;
     width: 280px;
@@ -267,12 +268,17 @@ body{
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.categories h2{
+    margin-top: 10px;
 }
 .category-item {
     width: 220px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
 .category-item:hover {
@@ -287,21 +293,62 @@ body{
     font-weight: 600;
     margin: 10px 0;
 }
+
+
 .how-it-works {
-    padding: 60px 100px;
-    background-color: #fff;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 100px;
+  background: #f9fafc;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.steps {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+
+.how-text {
+  flex: 1.2; /* ✅ slightly larger text area */
+  max-width: 60%;
 }
-.step {
-    width: 200px;
+
+.how-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
 }
-.step i {
-    font-size: 30px;
-    color: #007bff;
-    margin-bottom: 10px;
+
+.how-text p {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.how-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.how-text li {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.how-text strong {
+  color: #0078d7;
+}
+
+.how-image {
+  flex: 0.8; /* ✅ smaller image area */
+  text-align: right;
+}
+
+.how-image img {
+  width: 420px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
