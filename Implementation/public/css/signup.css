@@ -52,6 +52,7 @@ header {
   border-radius: 16px;
   z-index: 0;
 }
+/* Bottom shadow only */
 
 /* Main form box */
 .main {
