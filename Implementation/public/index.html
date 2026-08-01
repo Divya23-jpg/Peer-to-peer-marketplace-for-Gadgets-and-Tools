@@ -4,116 +4,325 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing page</title>
-    <link rel="stylesheet" href="css/landing_page.css">
+    <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  </head>
 <body>
-<!-- Nav Bar -->
-     <div class="nav">
-        <p class="navbar-brand"><i>GEARSHARE</i></p> 
-        <a class="navbar-bottom" id="home" href="#">HOME</a>
-        <a class="navbar-bottom" id="shop" href="#">SHOP</a>
 
-        <div class="dropdown">
-            <a  class="navbar-bottom" id="category"  href="#">CATEGORIES</a>
-            <div class="dropdown-content">
-                <a href="#">Power & Tools</a>
-                <a href="#">Cameras & Accessories</a>
-                <a href="#">Electronics & Gadgets</a>
-                <a href="#">Outdoor & Garden</a>
-                <a href="#">Hobby & Fun</a>
-            </div>
-        </div>
+<!-- Navbar -->
+<div class="nav">
+  <div class="brand-container">
+    <div class="brand-icon">
+      <i class="fa fa-camera"></i>
+    </div>
+    <p class="navbar-brand"><strong>GEARSHARE</strong></p>
+  </div>
 
-        <a class="navbar-bottom" id="contact" href="#">CONTACT</a>
-        <button   class="navbar-bottom"  id="login">login</button>
-        <button   class="navbar-bottom" id="signup">Signup</button>
-        </div>
+  <div class="nav-links">
+    <a class="navbar-bottom" href="#">Home</a>
+    <a class="navbar-bottom" href="#">Shop Gear</a>
 
-<!-- Hero Banner -->
+    <div class="dropdown">
+      <a class="navbar-bottom" href="#">Categories</a>
+      <div class="dropdown-content">
+        <a href="#">Power & Tools</a>
+        <a href="#">Cameras & Accessories</a>
+        <a href="#">Electronics & Gadgets</a>
+        <a href="#">Outdoor & Garden</a>
+        <a href="#">Hobby & Fun</a>
+      </div>
+    </div>
 
+    <a class="navbar-bottom" href="#">About Us</a>
+    <a class="navbar-bottom" href="#">Contact</a>
+  </div>
 
-<section class="hero-banner">
-  <div class="hero-content">
-    <h1 class="hero-title">Share or Rent Popular Gear & Tools</h1>
-    <p class="hero-subtitle">
-      A peer-to-peer marketplace for tech gear, cameras, power tools and much more.
-    </p>
-    <div class="hero-buttons">
-      <button class="browse-btn">Browse Listing</button>
-      <button class="list-btn">List your Item</button>
+  <!-- Right-side buttons with dropdown -->
+  <div class="nav-buttons">
+    <div class="dropdown">
+      <button id="login">Login ▼</button>
+      <div class="dropdown-content">
+        <a href="#">Admin </a>
+        <a href="#">Renter </a>
+        <a href="#">Customer</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button id="signup">Signup ▼</button>
+      <div class="dropdown-content">
+        <a href="#">Admin </a>
+        <a href="#">Renter </a>
+        <a href="#">Customer</a>
+      </div>
     </div>
   </div>
-</section>
+</div>
 
+<!-- Hero Banner -->
+ <section class="hero-banner section-gradient">
+<section class="hero-banner">
+  <div class="hero-content">
+  
+    <h1 class="hero-title">
+      Share or Rent <span class="highlight">Popular Gear & Tools</span>
+    </h1>
+    <p class="hero-subtitle">
+      A peer-to-peer marketplace for tech gear, cameras, power tools and much more.
+      Rent from verified creators locally or monetize your own idle equipment.
+    </p>
+    <div class="hero-buttons">
+      <button class="browse-btn">Browse Listing →</button>
+      <button class="list-btn">List your Item</button>
+    </div>
 
-<!-- Start Renting and List Your Item Button -->
-<section class="features">
-    <div class="feature-card">
-   
-     <i class="fa fa-shield"></i>
-    <h3>Secure & Trustworthy</h3>
-    <p>Simple and safe transactions for peace of mind.</p>
+   <div class="hero-stats">
+  <div class="stat-card">
+    <strong>10M+</strong>
+    <p>Insured Rentals</p>
+  </div>
+  <div class="stat-card">
+    <strong>100%</strong>
+    <p>Verified Users</p>
+  </div>
+  <div class="stat-card">
+    <strong>4.9/5</strong>
+    <p>Creator Rating</p>
+  </div>
+</div>
+
   </div>
 
-    <div class="feature-card">
-  
-       <i class="fa fa-cogs"></i>
-    <h3>Wide Range of Categories</h3>
-    <p>Access a variety of products from electronics to tools.</p>
+  <div class="hero-image">
+    <img src="images/login banner.png" alt="Gear and Tools">
+  </div>
+</section>
+</section>
+<!-- Features -->
+<section class="features">
+  <div class="feature-card">
+    <i class="fa fa-shield"></i>
+    <h3>Secure & Insured</h3>
+    <p>Every rental is backed by up to $10,000 in equipment protection and instant ID verification for peace of mind.</p>
   </div>
 
   <div class="feature-card">
+    <i class="fa fa-camera"></i>
+    <h3>Wide Range of Gear</h3>
+    <p>From cinematic 8K cameras and drones to contractor-grade power tools from trusted local owners.</p>
+  </div>
 
-      <i class="fa fa-share-alt"></i>
+  <div class="feature-card">
+    <i class="fa fa-dollar"></i>
     <h3>Earn by Sharing</h3>
-    <p>Turn your unused gear into extra cash.</p>
+    <p>Turn your equipment into a revenue stream when not in use. Renters pay securely and payouts are instant.</p>
   </div>
 </section>
+
 
 <!-- Category -->
- <section class="categories">
-    <h2>Most Popular Categories</h2>
-    <div class="category-grid">
-        <div class="category-item">
-            <img src="images/camera-vedio.jpg" alt="Cameras & Accessories">
-            <p>Cameras & Accessories</p>
-        </div>
-        <div class="category-item">
-            <img src="images/Power-Tools1.jpg" alt="Power Tools">
-            <p>Power & Tools</p>
-        </div>
-        <div class="category-item">
-            <img src="images/gadget-tech.jpg" alt="Electronics & Gadgets">
-            <p>Electronics & Gadgets</p>
-        </div>
-        <div class="category-item">
-            <img src="images/home-garden.jpg" alt="Outdoor & Garden">
-            <p>Outdoor & Garden</p>
-        </div>
-        <div class="category-item">
-            <img src="images/hobby-fun.jpg" alt="Outdoor & Garden">
-            <p>Outdoor & Garden</p>
-        </div>
+ <section class="categories pattern-bg">
+<section class="categories">
+  <div class="categories-header">
+  <h4><i class="fa fa-camera animated-icon"></i> EXPLORE CATEGORIES</h4>
+ </div>
+ 
+
+  <div class="category-grid">
+    <div class="category-card">
+      <div class="image-container">
+        <img src="images/camera-vedio.jpg" alt="Cameras & Video">
+      </div>
+      <div class="category-info">
+        <p class="items">42 ITEMS AVAILABLE</p>
+        <h3>Cameras & Video</h3>
+        <p>DSLRs, Cinema cameras, Drones and lenses.</p>
+      </div>
     </div>
+
+    <div class="category-card">
+      <div class="image-container">
+        <img src="images/gadget-tech.jpg" alt="Pro Audio & Mics">
+      </div>
+      <div class="category-info">
+        <p class="items">28 ITEMS AVAILABLE</p>
+        <h3>Pro Audio & Mics</h3>
+        <p>Wireless mics, recorders, studio monitors.</p>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <div class="image-container">
+        <img src="images/hobby-fun.jpg" alt="Hobby & Fun">
+      </div>
+      <div class="category-info">
+        <p class="items">35 ITEMS AVAILABLE</p>
+        <h3>Hobby & Fun</h3>
+        <p>LED panels, softboxes, RGB tubes, stands.</p>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <div class="image-container">
+        <img src="images/home-garden.jpg" alt="Home & Garden">
+      </div>
+      <div class="category-info">
+        <p class="items">19 ITEMS AVAILABLE</p>
+        <h3>Home & Garden</h3>
+        <p>Gardening tools, landscaping gear, outdoor equipment.</p>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <div class="image-container">
+        <img src="images/Power-Tools1.jpg" alt="Power Tools">
+      </div>
+      <div class="category-info">
+        <p class="items">56 ITEMS AVAILABLE</p>
+        <h3>Power Tools</h3>
+        <p>Heavy drills, saws, grinders, power equipment.</p>
+      </div>
+    </div>
+  </div>
 </section>
-<section class="how-it-works">
-  <div class="how-text">
-    <h2>How It Works</h2>
-    <p>GearShare makes renting easy and secure. Simply browse listings, connect with owners, and enjoy your gear hassle‑free.</p>
-    <ul>
-      <li><strong>Browse & Request:</strong> Find the gear you need and send a rental request.</li>
-      <li><strong>Connect & Rent:</strong> Chat with owners and finalize your rental.</li>
-      <li><strong>Use & Return:</strong> Enjoy your gear, then return it safely.</li>
-    </ul>
+</section>
+<!-- Top Renters -->
+<section class="top-renters">
+  <div class="renters-header">
+    <h4>TOP RENTERS</h4>
+    <h2>Our Most Trusted Creators</h2>
   </div>
 
-  <div class="how-image">
-    <img src="images/how-it-works.png" alt="Person using smartphone to rent gear">
+  <div class="renters-grid">
+    <div class="renter-card">
+      <img src="images/renter1.jpg" alt="Alex Vance" class="renter-photo">
+      <h3>Alex Vance</h3>
+      <p class="verified">✔ Verified Renter</p>
+      <p class="rating">⭐ 4.9 (38)</p>
+      <p class="product">Sony FX3 Cinema Camera + 24‑70mm GM II Lens</p>
+    </div>
+
+    <div class="renter-card">
+      <img src="images/renter2.jpg" alt="Marcus Brody" class="renter-photo">
+      <h3>Marcus Brody</h3>
+      <p class="verified">✔ Verified Renter</p>
+      <p class="rating">⭐ 4.8 (24)</p>
+      <p class="product">DJI Mavic 3 Pro Cine Combo (Apple ProRes)</p>
+    </div>
+
+    <div class="renter-card">
+      <img src="images/renter3.jpg" alt="Sarah Chen" class="renter-photo">
+      <h3>Sarah Chen</h3>
+      <p class="verified">✔ Verified Renter</p>
+      <p class="rating">⭐ 5.0 (19)</p>
+      <p class="product">Sennheiser EW‑D Wireless Lav Mic System</p>
+    </div>
   </div>
 </section>
 
+<!-- Feedback Section -->
+<section class="feedback-section">
+  <div class="feedback-card">
+    <div class="feedback-content">
+      <h4>CUSTOMER REVIEWS</h4>
+      <h2>What People Say</h2>
+
+      <div class="reviews">
+        <div class="review">
+          <p class="quote">“Smooth process and great support!”</p>
+          <p class="author">— Alex Vance ⭐ 4.9</p>
+        </div>
+
+        <div class="review">
+          <p class="quote">“Earned easily by renting my gear.”</p>
+          <p class="author">— Marcus Brody ⭐ 4.8</p>
+        </div>
+
+        <div class="review">
+          <p class="quote">“Safe, quick, and reliable platform.”</p>
+          <p class="author">— Sarah Chen ⭐ 5.0</p>
+        </div>
+      </div>
+
+      <div class="feedback-buttons">
+        <button class="btn-primary">Write a Review</button>
+        <button class="btn-secondary">View All Reviews</button>
+      </div>
+
+    
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <!-- Column 1: Logo and About -->
+    <div class="footer-column">
+      <div class="footer-logo">
+        <i class="fa fa-camera"></i>
+        <h3>GearShare</h3>
+      </div>
+      <p>Connecting creators and renters through trusted gear sharing. Rent, earn, and create with confidence.</p>
+
+      <!-- ✅ Trust Badges -->
+      <div class="trust-badges">
+        <img src="images/stripe.jpg" alt="Stripe Verified">
+        <img src="images/secure.jpg" alt="Secure Payments">
+        
+      </div>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore Categories</a></li>
+        <li><a href="#">Top Renters</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Support -->
+    <div class="footer-column">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Dispute Resolution</a></li>
+        <li><a href="#">Insurance Options</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Newsletter -->
+    <div class="footer-column">
+      <h4>Stay Updated</h4>
+      <p>Subscribe to get the latest rental deals and updates.</p>
+      <div class="newsletter">
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Section -->
+ <div class="footer-bottom">
+  <p>© 2026 GearShare. All rights reserved.</p>
+  <div class="footer-social">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</div>
+</footer>
 
 
 
