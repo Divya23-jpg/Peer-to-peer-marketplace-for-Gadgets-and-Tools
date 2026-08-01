@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/signup.css_page.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - GearShare</title>
+  <link rel="stylesheet" href="css/signup.css">
+  <script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div>
-        <label for="">Enter your Email</label>
-        <input type="email"   name="email"  placeholder="Enter your email">
+
+    <header>
+        <!-- Navbar -->
+    </header>
+  <div class="hero">
+    <div class="hero-text">
+
+      
     </div>
 
-    <div>
-        <label for="">Enter your password</label>
-        <input type="password"   name="password"   placeholder="Enter your password">
+    <div class="main">
+        <h2>Join GearShare</h2>
+      <form>
+
+        <label class="name-label">Full Name <i class="fa-solid fa-user"></i></label>
+        <input class="name" type="text" placeholder="Enter Your Full Name" required>
+
+        <label class="email-label">Email <i class="fa-solid fa-envelope"></i></label>
+        <input class="email" type="email" placeholder="Enter Your Email" required>
+
+        <label class="password-label">Password <i class="fa-solid fa-lock"></i></label>
+        <input class="password" type="password" placeholder="Create a Password" required>
+
+        <label class="confirm-label">Confirm Password <i class="fa-solid fa-lock"></i></label>
+        <input class="confirm" type="password" placeholder="Re-enter Password" required>
+
+        <div class="terms">
+          <label for="terms">I agree to the Terms & Conditions</label>
+          <input type="checkbox" id="terms" required>
+        </div>
+
+        <button class="btn">Sign Up</button>
+        <p class="login-text">Already have an account? <a href="Login.html">Login</a></p>
+      </form>
     </div>
-    
-    <button>Submit</button>
+  </div>
 </body>
 </html>

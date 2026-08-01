@@ -5,187 +5,168 @@
    font-family: sans-serif;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "poppins",sans-serif;
 
-}
-
-.hero{
-    width: 90%;
-    height: 50vh;
-    background: url("login banner.png") no-repeat center;
-    background-size: cover;
-    border-radius: 16px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction:column;
-    align-items: center;
-
+.main {
+      background: linear-gradient(145deg, #ffffff, #fef6f0, #eaf0f9);
+  box-shadow: 0 10px 30px rgba(10, 31, 68, 0.15);
 }
 
 
-.hero-text h2{
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 40%, #eaf0f9 100%); /* ✅ soft white-blue gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden; /* prevents scroll cutoff */
+}
 
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #1e293b;
-    margin-bottom: 10px;
+.hero {
+  width: 90%;
+  height: 80vh; /* slightly taller for full image */
+  background: url("../images/login2.png") center/cover no-repeat;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(255, 122, 0, 0.25);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; /* ✅ ensures hero stays below form */
+}
+
+/* Light overlay for blending */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0)); 
+  border-radius: 16px;
+}
+
+/* Hero text */
+.hero-text {
+  position: relative;
+  z-index: 2; /* ✅ ensures text is above overlay */
+}
+.hero-text h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #0a1f44;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #ff7a00;
+  margin-bottom: 40px;
+}
+
+/* Login box */
+
+
+.main {
+  background: linear-gradient(145deg, #ffffff 0%, #fef6f0 40%, #eaf0f9 100%); /* ✅ soft white-orange-blue blend */
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(10, 31, 68, 0.15);
+  padding: 50px 45px; /* ✅ more breathing space */
+  width: 380px;       /* ✅ slightly wider */
+  position: relative;
+  z-index: 3;
+}
+
+/* Tagline inside box */
+.form-tagline {
+  font-size: 1rem;
+  color: #ff7a00; /* ✅ orange accent */
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 
-.hero-text p{
-    font-size: 1.2rem;
-    color: #475569;
-    margin-bottom: 80px;
-}
-
-
-
-.main{
-    background: rgba(255,255,255,0.6);
-    backdrop-filter: blur(3px);
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    padding:50px;
-    width: 350px;
-    height: 100vh;
-
-    display:block ;
-
-    top: 20px;
-    bottom: 20px;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.main form{
-    font-weight: bold;
-    display: block;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* Labels */
 .email-label,
-.password-label{
-    font-size: 0.95rem;
-    color:#334155;
-    margin-bottom: 5px;
-    display: block;
-    text-align: left;
-    width: 100%;
-
-}
-.email,.password{
-    width: 100%;
-    padding-left: 35px;
-    border: 1px solid #cbd5e1;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    position: relative;
+.password-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0a1f44;       /* ✅ navy text for clarity */
+  margin-bottom: 6px;   /* ✅ tighter spacing */
+  display: block;
+  text-align: left;     /* ✅ aligned left inside box */
+  width: 100%;
 }
 
-
-.f{
-    margin-top: 0;
+/* Inputs */
+.email,
+.password,
+.main input {
+  width: 100%;
+  padding: 14px 12px;   /* ✅ taller, more comfortable */
+  margin-bottom: 20px;  /* ✅ consistent spacing */
+  border: 1.5px solid #ff7a00; /* ✅ orange border */
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(255, 122, 0, 0.15); /* ✅ subtle orange glow */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.main label{
-
-    font-size: 16px;
-    color: #334155;
-    margin-bottom: 10px;
-    display: block;
-}
-
-.main input{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #cbd5e1;
-    border-radius: 6px;
-    font-size: 0.95rem;
+/* Input focus effect */
+.email:focus,
+.password:focus,
+.main input:focus {
+  outline: none;
+  border-color: #0a1f44; /* ✅ navy focus */
+  box-shadow: 0 0 8px rgba(10, 31, 68, 0.25);
 }
 
 
-.btn{
-    width: 100%;
-    max-width: 320px;
-    padding: 12px;
-    background-color: #f97316;
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-bottom: 15px;
-
-}
-.btn:hover{
-    background-color: #ea580c;
-
-}
-
-.remember{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: #334155;
-    margin: 10px 0 ;
-    
-}
-
-.remember label{
-    font-size: 16px;
-    white-space: nowrap;
- 
-}
-
-input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  transform: scale(1.1);
+/* Button */
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #ff7a00, #ffa733);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  margin-left: 40%;
-
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.signup-text{
-    font-size: 0.9rem;
-    color: #475569;
-}
-.signup-text a{
-    font-weight: 500;
-    color: #2563eb;
-    text-decoration: none;
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(255, 122, 0, 0.3);
 }
 
-/* Responsive */
-@media (max-width:768px){
-    .hero{
-        height: auto;
-        padding: 40px 20px;
-    }
+.remember {
+  display: flex;
+  align-items: center;       /* ✅ keeps checkbox and text perfectly aligned */
+  justify-content: space-between; /* ✅ pushes checkbox to the right side */
+  margin: 15px 0;
+  color: #0a1f44;  
+   border-color: #0a1f44;          /* navy text for theme consistency */
+}
 
-    .main{
-        width: 90%;
-    }
+.remember label {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
 
-    .hero h1{
-        font-size: 2rem;
-    }
-    .hero p{
-        font-size: 1rem;
-    }
+.remember input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #ff7a00;     /* orange theme color */
+  margin: 0;                 /* ✅ removes default offset */
+  vertical-align: middle;    /* ✅ ensures same row alignment */
 }
