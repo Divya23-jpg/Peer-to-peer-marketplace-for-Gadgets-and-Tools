@@ -1,0 +1,102 @@
+/* ===== Page Background ===== */
+body {
+  background: repeating-linear-gradient(
+    45deg,
+    #0b1b3f,
+    #0b1b3f 10px,
+    #132a5e 10px,
+    #132a5e 20px
+  );
+  font-family: 'Segoe UI', sans-serif;
+  color: #0b1b3f;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Navbar space */
+header {
+  height: 70px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(10, 31, 68, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+/* ===== Listing Form Container ===== */
+.listing-form {
+  max-width: 520px;
+  margin: 80px auto;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Form Labels ===== */
+.listing-form label {
+  display: block;
+  margin-top: 14px;
+  font-weight: 600;
+  color: #0b1b3f;
+}
+
+/* ===== Inputs & Textarea ===== */
+.listing-form input[type="text"],
+.listing-form input[type="number"],
+.listing-form input[type="date"],
+.listing-form input[type="file"],
+.listing-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 6px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect */
+.listing-form input:focus,
+.listing-form textarea:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 6px rgba(255, 122, 0, 0.3);
+  outline: none;
+}
+
+/* File input */
+.listing-form input[type="file"] {
+  background: #f9f9f9;
+  padding: 8px;
+  border: 1.5px dashed #ccc;
+}
+
+/* ===== Submit Button ===== */
+.listing-form button {
+  margin-top: 24px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #ff7a00, #ff9a3d);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.listing-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 122, 0, 0.3);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .listing-form {
+    padding: 20px;
+    margin: 40px 20px;
+  }
+}
