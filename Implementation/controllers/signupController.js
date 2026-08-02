@@ -18,8 +18,7 @@ exports.signup=async(req,res)=>{
         await user.create({
             name,email,phone,address,password:hashedPassword
         });
-
-         res.redirect("/");  
+        res.send(`<script>alert('Signup successful'); window.location.href='/';</script>`);
         }
         catch(err){
             console.error(err);

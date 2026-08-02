@@ -15,14 +15,14 @@
       
     </div>
 <div class="main">
-  <form>
+  <form action="/login" method="POST">
     <p class="form-tagline">Login to rent or share gear with ease</p> <!-- ✅ tagline inside box -->
 
     <label class="email-label">Email <i class="fa-solid fa-envelope"></i></label>
-    <input class="email" type="email" placeholder="Enter Your Email" required>
+    <input class="email" type="email"   name="email"   placeholder="Enter Your Email" required>
 
     <label class="password-label">Password <i id="lock" class="fa-solid fa-lock"></i></label>
-    <input class="password" type="password" placeholder="Enter Your Password" required>
+    <input class="password" type="password"   name="password"  placeholder="Enter Your Password" required>
 
     <div class="remember">
       <label for="remember">Remember Me</label>

@@ -44,19 +44,15 @@
   <!-- Right-side buttons with dropdown -->
   <div class="nav-buttons">
     <div class="dropdown">
-      <button id="login">Login </button>
-      <!-- <div class="dropdown-content">
-        <a href="#">Admin </a>
-        <a href="#">Renter </a>
-        <a href="#">Customer</a>
-      </div> -->
+      <button   onclick="window.location.href='/login.html'"             id="login">Login </button>
+    
     </div>
 
     <div class="dropdown">
       <button id="signup">Signup ▼</button>
       <div class="dropdown-content">
         <a href="#">Admin </a>
-        <a href="#">Renter </a>
+        <a href="#" onclick="window.location.href='/signup_renter.html'">Renter </a>
         <a href="#" onclick="window.location.href='/signup.html'">Customer</a>
       </div>
     </div>

@@ -13,11 +13,13 @@ app.use(express.static("public"));
 app.use(express.json()); // for JSON requests (like fetch/AJAX)
 app.use(express.urlencoded({ extended: true })); // for form submissions
 
-// Router takes data
+// Signup
 const signupRouter = require("./routers/signupRouter.js");
 app.use("/", signupRouter);
 
-
+// Login
+const loginRouter = require("./routers/loginRouter.js");
+app.use("/", loginRouter);
 
 
 // server running
