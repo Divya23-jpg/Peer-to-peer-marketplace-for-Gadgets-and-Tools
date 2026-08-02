@@ -7,7 +7,14 @@ exports.createListing = async (req, res) => {
       return res.status(403).send("Only renters can add listings");
     }
 
-    const { title, description, category, daily_rate, available_from, available_until } = req.body;
+    const {
+      title,
+      description,
+      category,
+      daily_rate,
+      available_from,
+      available_until,
+    } = req.body;
     const availability = { from: available_from, until: available_until };
 
     await listing.create({
@@ -15,11 +22,11 @@ exports.createListing = async (req, res) => {
       description,
       category,
       daily_rate,
-      photo_url: req.files ? req.files.map(f => f.filename).join(",") : null,
+      photo_url: req.files ? req.files.map((f) => f.filename).join(",") : null,
       availability,
-      renter_id: req.session.renter.id
+      renter_id: req.session.renter.id,
     });
-        res.send(`<script>
+    res.send(`<script>
       alert('Item has been added successfully');
       window.location.href = '/index.html'; 
     </script>`);
@@ -28,7 +35,6 @@ exports.createListing = async (req, res) => {
     res.status(500).send("Error creating listing");
   }
 };
-
 
 exports.getListings = async (req, res) => {
   try {

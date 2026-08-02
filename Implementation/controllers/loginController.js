@@ -28,14 +28,12 @@ exports.login = async (req, res) => {
 
     // Save session
     if (accountType === "user") {
-  req.session.user = account;
-  return res.redirect("/index.html");
-} else {
-  req.session.renter = account;   // ✅ must set renter session
-  return res.redirect("/listing.html");
-}
-
-
+      req.session.user = account;
+      return res.redirect("/index.html");
+    } else {
+      req.session.renter = account; // ✅ must set renter session
+      return res.redirect("/listing.html");
+    }
   } catch (err) {
     console.error(err);
     res.status(500).send("Error logging in");

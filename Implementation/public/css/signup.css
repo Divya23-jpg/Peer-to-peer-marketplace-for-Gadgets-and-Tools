@@ -19,7 +19,7 @@ body {
 
 /* Navbar space */
 header {
-  height: 70px; /* ✅ space for navbar */
+  height: 70px; 
   width: 100%;
   background: #fff;
   box-shadow: 0 2px 10px rgba(10, 31, 68, 0.1);
@@ -40,7 +40,7 @@ header {
 
   position: relative;
   box-shadow: 0 8px 40px rgba(10, 31, 68, 0.25);
-  align-items: center; /* ✅ centers the box vertically */
+  align-items: center; 
   padding-top: 40px;
 }
 
@@ -49,8 +49,7 @@ header {
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.5);
-  box-shadow: inset 0 0 60px rgba(255, 122, 0, 0.2); /* ✅ subtle orange glow */
-  border-radius: 16px;
+  box-shadow: inset 0 0 60px rgba(255, 122, 0, 0.2); 
   z-index: 0;
 }
 
@@ -61,14 +60,14 @@ header {
   backdrop-filter: blur(8px);
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(10, 31, 68, 0.15);
-  padding: 60px 40px;   /* ✅ more internal space */
+  padding: 60px 40px;   
   width: 420px;
-  min-height: 680px;    /* ✅ taller box */
+  min-height: 680px;   
   position: relative;
   z-index: 3;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* ✅ heading stays visible */
+  justify-content: flex-start; 
 }
 
 /* Heading */

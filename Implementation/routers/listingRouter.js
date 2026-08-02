@@ -9,7 +9,12 @@ const isAuthenticated = require("../auth.js");
 const upload = multer({ dest: "uploads/" }).array("photos", 3);
 
 //  Create listing
-router.post("/listings", isAuthenticated, upload, listingController.createListing);
+router.post(
+  "/listings",
+  isAuthenticated,
+  upload,
+  listingController.createListing,
+);
 
 //  Fetch listings
 router.get("/listings", listingController.getListings);

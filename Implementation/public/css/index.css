@@ -14,11 +14,11 @@ body{
   padding: 15px 60px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   gap: 80px;
-  position: fixed;     /* ✅ makes it stick */
-  top: 0;              /* ✅ sticks to top */
+  position: fixed;     
+  top: 0;              
   left: 0;
-  width: 100%;         /* ✅ full width */
-  z-index: 1000;       /* ✅ stays above other content */
+  width: 100%;        
+  z-index: 1000;    
 }
 
 
@@ -29,7 +29,7 @@ body{
   align-items: center;
   gap: 10px;
   position: absolute;
-  left: 40px; /* logo pushed left */
+  left: 40px; 
 }
 
 
@@ -117,7 +117,7 @@ body{
   display: flex;
   gap: 15px;
   position: absolute;
-  right: 60px; /* buttons pushed right */
+  right: 60px; 
 }
 
 /* Buttons */
@@ -217,19 +217,6 @@ body{
   box-shadow: 0 0 25px rgba(255, 122, 0, 0.6);
   animation: pulseShadow 3s infinite ease-in-out; /* automatic effect */
 }
-
-/* Keyframes for glowing orange shadow */
-/* @keyframes pulseShadow {
-  0% {
-    box-shadow: 0 0 15px rgba(255, 122, 0, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 40px rgba(255, 122, 0, 0.8);
-  }
-  100% {
-    box-shadow: 0 0 15px rgba(255, 122, 0, 0.4);
-  }
-} */
 
 
 
@@ -340,19 +327,19 @@ body{
 .features {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;   /* ✅ spreads cards across full width */
+  justify-content: space-between;   
   align-items: stretch;
-  gap: 60px;                        /* ✅ larger gap between cards */
+  gap: 60px;                        
   padding: 80px 100px;
   background-color: #fff;
-  width: 100%;                      /* ✅ covers entire page width */
+  width: 100%;                      
   box-sizing: border-box;
 }
 
 .feature-card {
-  flex: 1;                          /* ✅ cards grow evenly to fill row */
-  max-width: 360px;                 /* optional: limit max size */
-  min-height: 250px;                /* larger height */
+  flex: 1;                          
+  max-width: 360px;                 
+  min-height: 250px;                
   background-color: #ffffff;
   border-radius: 16px;
   padding: 30px 25px;
@@ -602,7 +589,7 @@ body{
 
 .feedback-card {
   position: relative;
-  background: linear-gradient(135deg, #0a1f44, #ff7a00); /* ✅ navy blue + orange */
+  background: linear-gradient(135deg, #0a1f44, #ff7a00); 
   border-radius: 20px;
   padding: 40px 50px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
@@ -743,7 +730,7 @@ footer {
 .footer-logo h3 {
   font-size: 22px;
   font-weight: 800;
-  color: #ff7a00; /* ✅ orange accent */
+  color: #ff7a00; /*  orange accent */
 }
 
 .footer-column h4 {
@@ -837,7 +824,7 @@ footer {
 }
 
 .trust-badges img {
-  height: 32px;          /* slightly larger for visibility */
+  height: 32px;          
   display: inline-block;
   object-fit: contain;   /* keeps aspect ratio */
 }
@@ -845,13 +832,13 @@ footer {
 /* Social links */
 .footer-social a {
   color: #fff;
-  font-size: 18px;   /* slightly larger for visibility */
+  font-size: 18px;   
   margin-left: 15px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-social a:hover {
-  color: #ff7a00;    /* orange hover */
+  color: #ff7a00;    
   transform: scale(1.2);
 }
 
