@@ -112,9 +112,10 @@ const listing = sequelize.define("listing", {
     discount: { 
         type: DataTypes.JSONB }
 });
-module.exports = { user, renter ,listing};
-
 
 // Relationship: One renter → many listings
 renter.hasMany(listing, { foreignKey: "renter_id" });
 listing.belongsTo(renter, { foreignKey: "renter_id" });
+
+
+module.exports = { user, renter ,listing};
