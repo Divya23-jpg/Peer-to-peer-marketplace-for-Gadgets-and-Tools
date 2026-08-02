@@ -111,7 +111,7 @@ const listing= sequelize.define("listing", {
     discount: { 
         type: DataTypes.JSON 
     },
-        freezeTableName: true 
+
 });
 
 // Relationship: One renter → many listings

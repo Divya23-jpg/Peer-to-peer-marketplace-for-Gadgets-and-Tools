@@ -1,3 +1,5 @@
+const { listing } = require("../models/model.js");
+
 exports.createListing = async (req, res) => {
   try {
     if (!req.session.renter) {
@@ -17,10 +19,23 @@ exports.createListing = async (req, res) => {
       availability,
       renter_id: req.session.renter.id
     });
-
-    res.redirect("listing.html");
+        res.send(`<script>
+      alert('Item has been added successfully');
+      window.location.href = '/index.html'; 
+    </script>`);
   } catch (err) {
     console.error("Error creating listing:", err);
     res.status(500).send("Error creating listing");
+  }
+};
+
+
+exports.getListings = async (req, res) => {
+  try {
+    const listings = await listing.findAll();
+    res.json(listings);
+  } catch (err) {
+    console.error("Error fetching listings:", err);
+    res.status(500).send("Error fetching listings");
   }
 };

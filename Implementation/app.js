@@ -31,8 +31,8 @@ const signupUserRouter = require("./routers/signupRouter.js");
 const signupRenterRouter = require("./routers/signup_renterRouter.js");
 // const signupAdminRouter = require("./routers/signup_adminRouter.js");
 const loginRouter = require("./routers/loginRouter.js");
-const listingRouter = require("./routers/listingRouter.js");
 
+const listingRouter = require("./routers/listingRouter.js");
 
 // mount routers
 app.use("/signup/user", signupUserRouter);

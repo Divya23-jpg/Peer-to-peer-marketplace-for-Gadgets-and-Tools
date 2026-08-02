@@ -6,14 +6,16 @@ document.addEventListener("DOMContentLoaded", () => {
       fetch("/auth/check", { credentials: "include" })
         .then(res => res.json())
         .then(data => {
-          if (!data.signedUp) {
-            alert("Please sign up first");
-            window.location.href = "/signup/user";
-          } else if (!data.loggedIn) {
-            window.location.href = "/login";
-          } else {
-            window.location.href = "/listing.html";
-          }
+            if (data.loggedIn && data.type === "renter") {
+  window.location.href = "/listing.html";   // renter logged in
+} else if (data.loggedIn && data.type === "user") {
+  alert("Users cannot list items");
+  window.location.href = "/index.html";     // normal user
+} else {
+  window.location.href = "/login";          // not logged in
+}
+
+
         })
         .catch(err => console.error("Auth check failed:", err));
     });
