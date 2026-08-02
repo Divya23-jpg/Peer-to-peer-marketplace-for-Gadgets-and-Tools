@@ -31,6 +31,11 @@ const user=sequelize.define("user",{
 
 });
 const renter=sequelize.define("renter",{
+    id: { 
+        type: DataTypes.INTEGER, 
+        autoIncrement: true, 
+        primaryKey: true
+    },
     business_name:{
         type:DataTypes.STRING,
         allowNull:false
@@ -69,4 +74,47 @@ const renter=sequelize.define("renter",{
    
 
 });
-module.exports = { user, renter };
+
+
+
+
+// Listing model
+const listing = sequelize.define("listing", {
+    id: { 
+        type: DataTypes.INTEGER, 
+        autoIncrement: true, 
+        primaryKey: true 
+    },
+    title: { 
+        type: DataTypes.STRING, 
+        allowNull: false 
+    },
+    description: {
+        type: DataTypes.TEXT,
+        allowNull: false 
+    },
+   category: { 
+    type: DataTypes.STRING 
+    },
+  daily_rate: { 
+    type: DataTypes.DECIMAL(10,2), 
+    allowNull: false
+     },
+   photo_url: {
+     type: DataTypes.TEXT 
+    },
+   availability: { 
+    type: DataTypes.JSONB 
+    },
+   security_deposit: { 
+    type: DataTypes.DECIMAL(10,2) 
+},
+    discount: { 
+        type: DataTypes.JSONB }
+});
+module.exports = { user, renter ,listing};
+
+
+// Relationship: One renter → many listings
+renter.hasMany(listing, { foreignKey: "renter_id" });
+listing.belongsTo(renter, { foreignKey: "renter_id" });
