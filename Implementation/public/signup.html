@@ -14,33 +14,27 @@
         <!-- Navbar -->
     </header>
   <div class="hero">
-    <div class="hero-text">
-
-  
-      
-    </div>
-    
   <div class="main">
   <h2>Join GearShare</h2>
-  <form>
+  <form action="/signup" method="POST">
 
     <label class="name-label">Full Name <i class="fa-solid fa-user"></i></label>
-    <input class="name" type="text" placeholder="Enter Your Full Name" required>
+    <input class="name" type="text"   name="name"     placeholder="Enter Your Full Name" required>
 
     <label class="email-label">Email <i class="fa-solid fa-envelope"></i></label>
-    <input class="email" type="email" placeholder="Enter Your Email" required>
+    <input class="email" type="email"  name="email"   placeholder="Enter Your Email" required>
 
     <label class="phone-label">Phone <i class="fa-solid fa-phone"></i></label>
-    <input class="phone" type="tel" placeholder="Enter Your Phone Number" required>
+    <input class="phone" type="tel"   name="phone"   placeholder="Enter Your Phone Number" required>
 
     <label class="address-label">Address <i class="fa-solid fa-location-dot"></i></label>
-    <input class="address" type="text" placeholder="Enter Your Address" required>
+    <input class="address" type="text"  name="address"   placeholder="Enter Your Address" required>
 
     <label class="password-label">Password <i class="fa-solid fa-lock"></i></label>
-    <input class="password" type="password" placeholder="Create a Password" required>
+    <input class="password" type="password" name="password"   placeholder="Create a Password" required>
 
     <label class="confirm-label">Confirm Password <i class="fa-solid fa-lock"></i></label>
-    <input class="confirm" type="password" placeholder="Re-enter Password" required>
+    <input class="confirm" type="password"  name="confirmPassword"  placeholder="Re-enter Password" required>
 
     <div class="terms">
       <label for="terms">I agree to the Terms & Conditions</label>

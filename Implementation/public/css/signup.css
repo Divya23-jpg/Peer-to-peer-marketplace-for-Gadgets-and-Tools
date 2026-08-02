@@ -2,7 +2,6 @@
 *{
     margin:0;
     padding: 0;
-   box-sizing: border-box;
    font-family: sans-serif;
 }
 
@@ -28,19 +27,21 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
+  border: 2px solid red;
 }
 
 /* Hero section */
 .hero {
-  flex: 1; /* ✅ fills remaining space below navbar */
+  flex: 1;
   width: 100%;
   background: url("../images/login2.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* ✅ pushes form to bottom */
-  padding-bottom: 60px; /* ✅ spacing from bottom */
+
   position: relative;
-  box-shadow: 0 8px 40px rgba(10, 31, 68, 0.25); /* ✅ soft navy shadow */
+  box-shadow: 0 8px 40px rgba(10, 31, 68, 0.25);
+  align-items: center; /* ✅ centers the box vertically */
+  padding-top: 40px;
 }
 
 .hero::before {
@@ -52,33 +53,34 @@ header {
   border-radius: 16px;
   z-index: 0;
 }
-/* Bottom shadow only */
 
-/* Main form box */
+
+
 .main {
   background: linear-gradient(145deg, #ffffff, #fef6f0, #eaf0f9);
   backdrop-filter: blur(8px);
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(10, 31, 68, 0.15);
-  padding: 40px 35px;
-  width: 500px;
-  min-height: 480px;
+  padding: 60px 40px;   /* ✅ more internal space */
+  width: 420px;
+  min-height: 680px;    /* ✅ taller box */
   position: relative;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; /* ✅ heading stays visible */
 }
 
-/* Heading inside main */
+/* Heading */
 .main h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #0a1f44;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 4;
 }
-
 /* Inputs and labels */
 .main label {
   font-size: 0.9rem;
@@ -171,7 +173,7 @@ header {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
