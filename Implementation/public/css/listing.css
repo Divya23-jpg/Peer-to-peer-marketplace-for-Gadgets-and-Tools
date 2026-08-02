@@ -66,6 +66,36 @@ header {
   outline: none;
 }
 
+/* Style for the category dropdown */
+#category {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fff;
+  color: #333;
+  appearance: none; /* removes default browser arrow */
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover and focus effects */
+#category:hover,
+#category:focus {
+  border-color: #ff7b00; /* orange accent to match your button */
+  box-shadow: 0 0 5px rgba(255, 123, 0, 0.4);
+  outline: none;
+}
+
+/* Optional: add a custom dropdown arrow */
+#category {
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><path fill='%23ff7b00' d='M4 6l4 4 4-4z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+}
+
 /* File input */
 .listing-form input[type="file"] {
   background: #f9f9f9;
