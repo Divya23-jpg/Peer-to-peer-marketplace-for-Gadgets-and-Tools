@@ -77,9 +77,8 @@ const renter=sequelize.define("renter",{
 
 
 
-
 // Listing model
-const listing = sequelize.define("listing", {
+const listing= sequelize.define("listing", {
     id: { 
         type: DataTypes.INTEGER, 
         autoIncrement: true, 
@@ -104,13 +103,15 @@ const listing = sequelize.define("listing", {
      type: DataTypes.TEXT 
     },
    availability: { 
-    type: DataTypes.JSONB 
+    type: DataTypes.JSON 
     },
    security_deposit: { 
     type: DataTypes.DECIMAL(10,2) 
 },
     discount: { 
-        type: DataTypes.JSONB }
+        type: DataTypes.JSON 
+    },
+        freezeTableName: true 
 });
 
 // Relationship: One renter → many listings
