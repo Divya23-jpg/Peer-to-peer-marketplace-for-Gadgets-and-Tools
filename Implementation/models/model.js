@@ -30,5 +30,43 @@ const user=sequelize.define("user",{
    
 
 });
+const renter=sequelize.define("renter",{
+    business_name:{
+        type:DataTypes.STRING,
+        allowNull:false
+    },
+    email:{
+        type:DataTypes.STRING,
+        allowNull:false,
+        unique:true
+    },
+    phone:{
+        type:DataTypes.STRING,
+        allowNull:false,
+        unique:true
 
-module.exports=user;
+    },
+    address:{
+        type:DataTypes.STRING,
+        allowNull:false
+    },
+    bank_account:{
+        type:DataTypes.STRING,
+        allowNull:false,
+        unique:true
+
+    },
+
+    id_verification:{
+        type:DataTypes.BLOB,
+        allowNull:false,
+
+    },
+    password:{
+        type:DataTypes.STRING,
+        allowNull:false
+    }
+   
+
+});
+module.exports = { user, renter };

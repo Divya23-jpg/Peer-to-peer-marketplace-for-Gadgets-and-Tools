@@ -1,5 +1,5 @@
 const express=require("express");
-const signupController=require("../controllers/signupController.js");
+const signupController=require("../controllers/signup_renterController.js");
 const router=express.Router();
 
 

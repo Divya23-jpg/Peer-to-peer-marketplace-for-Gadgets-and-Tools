@@ -1,12 +1,13 @@
 const express=require("express");
-const {user}=require('../models/model.js');
+
+const { renter } = require("../models/model.js");
 const router=express.Router();
 const bcrypt=require("bcrypt")
 
 
 exports.signup=async(req,res)=>{
     try{
-        const {name,email,phone,address,password,confirmPassword}=req.body;
+        const {business_name,email,phone,address,bank_account,id_verification,password,confirmPassword}=req.body;
 
         if(password!=confirmPassword){
             return res.status(400).send("Passwords do not match");
@@ -15,15 +16,18 @@ exports.signup=async(req,res)=>{
         // convert password to Hash  password
         const hashedPassword=await bcrypt.hash(password,10);
         
-        await user.create({
-            name,email,phone,address,password:hashedPassword
+        await renter.create({
+            business_name,email,phone,address,bank_account,id_verification,password:hashedPassword
         });
-       res.redirect("/login");
+
+        
+        res.redirect("/login.html");  // redirect to login page
+   
         }
         catch(err){
             console.error(err);
-            res.redirect("/signup.html");
-            // res.status(500).send("Error signing up");
+             res.redirect("/signup_renter.html");
+          
     }
 };
 
