@@ -19,3 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+document.getElementById("browse-btn").addEventListener("click", () => {
+  window.location.href = "/browse.html"; // opens new page
+});

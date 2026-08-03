@@ -17,6 +17,21 @@ router.post(
 );
 
 //  Fetch listings
-router.get("/listings", listingController.getListings);
+
+
+
+router.get("/listings", async (req, res) => {
+  try {
+    const where = {};
+    if (req.query.category) {
+      where.category = req.query.category;
+    }
+    const listings = await listing.findAll({ where });
+    res.json(listings);
+  } catch (err) {
+    res.status(500).send("Error fetching listings");
+  }
+});
+
 
 module.exports = router;

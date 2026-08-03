@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 //middleware
 
-app.use(express.json()); // for JSON requests (like fetch/AJAX)
+app.use(express.json()); // for JSON requests 
 app.use(express.urlencoded({ extended: true })); // for form submissions
 
 // session to check logged in or not

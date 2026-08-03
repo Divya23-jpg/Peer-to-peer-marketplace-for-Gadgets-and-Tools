@@ -24,7 +24,7 @@ exports.signup = async (req, res) => {
     res.redirect("/login");
   } catch (err) {
     console.error(err);
-    res.redirect("/signup.html");
+    res.redirect("/login.html");
     // res.status(500).send("Error signing up");
   }
 };
